@@ -1,0 +1,8 @@
+.characteristics-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.characteristics-container .characteristic{
+    width: 30%;
+}

@@ -126,22 +126,32 @@ main{
 }
 .team-info .image-container{
     order: 2;
-    width: 100%;
+    width: 40%;
+    align-self: center;
 }
 .team-info .image-container img{
+    position: relative;
     order: 2;
     width: 100%;
+}
+.team-info .image-container img:hover{
+    animation-name: sayori-jump;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+}
+@keyframes sayori-jump{
+    0% { width: 100%; top: 0;}
+    50%{width: 100%; top: -20px;}
+    100%{width: 100%; top: 0;}
 }
 .team-info .info-container{
     order: 1;
     width: 100%;
 }
 .team-info .info-container .donations{
-    width: 70%;
-    height: 50px;
-    border-radius: 10px;
-    background-color: #bcdffd;
     margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
